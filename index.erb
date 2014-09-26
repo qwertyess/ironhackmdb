@@ -1,0 +1,20 @@
+<html>
+<!DOCTYPE html>
+
+	<body>
+
+		 <% erb :form%>
+
+
+		<hr>
+			<%= @shows.length %>
+		</hr
+		<ul>
+		 	<% @show.each do |one_show| %>
+		 		<li>
+		 			<%=one_show.name %>
+		 		</li>
+		 	<% end %>
+		 </ul>
+	</body>
+</html>
